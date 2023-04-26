@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Work+Sans:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(226, 234, 234);
+}
+.container {
+  max-width: 80vw;
+  font-family: 'Ubuntu', sans-serif;
+}
+.deal{
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.mybtns{
+    margin: 12px;
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  height: 2rem;
+
+}
+.navbar li {
+  list-style: none;
+  margin: 5px 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn{
+    padding: 7px 12px;
+    cursor: pointer;
+    border: 2px solid  rgb(181, 181, 243);
+    color: white;
+    background-color: rgb(116, 116, 233);
+    border-radius: 12px;
+    }
+    
+.top-left{
+    width: 50%;
+    padding: 12px 0;
+    color: rgb(44, 44, 121);
+}
+.top-left p{
+    padding-top: 25px;
+}
+.top-right{
+    width: 50%;
+    padding: 12px 0;
+ 
+}
+.section1{
+    height: 80vh;
+    margin: auto;
+}
+.logo{
+    font-size: 2rem;
+}
+.top-left img{
+    width: 5rem;
+}
+.top-right img{
+    width: 500px;
+}
+
+.section2{
+    padding: 53px;
+}
+.section2 h1{
+    font-size: 2.5rem;
+}
+.section2 p{
+     padding: 0 10vw;
+     text-align: center;
+}
+.box{
+    padding: 13px 0;
+    margin: 12px 20px;
+    min-width: 20vw;
+    border: 1px solid rgb(21, 21, 45);
+    text-align: center;
+    border-radius: 8px;
+}
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0;
+    background: rgb(116, 116, 233)  ;
+}
+
+.box ul{
+    list-style: none;
+}
+.box ul li{
+    margin: 12px 2px;
+}
+
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3{
+    padding: 50px;
+}
+.section3 h1{
+    font-size: 3rem;
+}
+.section3 table{
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse;
+    margin-bottom: 140px;
+    margin-top: 10px;
+}
+.section3 table th{
+    width: 23vh;
+    border-bottom: 1px solid gray;
+    padding: 18px;
+}
+.section3 table td{
+
+    border-bottom: 1px solid gray;
+}
+
+footer{
+    padding: 23px;
+
+}
+
+@media screen and (max-width: 660px) {
+  
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+      
+      }
+      .section1 .top-right{
+        display: none;
+      }
+
+      .section1{
+        height: unset;
+
+    }
+    .top-left{
+        width: 95%;
+        padding: 12px 0;
+    
+    }
+
+    .section2 p{
+     display: none;
+   }  
+   .section2 h1{
+    font-size: 1.5rem;
+   }  
+
+   .boxes{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+   }
+   .box{
+    padding: 5px 0;
+    margin: 5px 0;
+    min-width: 100%;
+    border: 1px solid rgb(21, 21, 45);
+    text-align: center;
+    border-radius: 8px;
+   }
+
+   .btn{
+    padding: 4px 8px;
+    cursor: pointer;
+    border: 2px solid  rgb(181, 181, 243);
+    color: white;
+    background-color: rgb(116, 116, 233);
+    border-radius: 12px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .section1 .top-right img{
+        width: 90%;
+        height: 100%;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .deal{
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
+    .section2{
+        padding: 0;
+    }
+
+    .section2 p{
+        display: block;
+        text-align:start;
+      }  
+      .section2 h1{
+       font-size: 1.5rem;
+      }
+      .box{
+        padding: 3px 0;
+        margin: 2px 20px;
+        min-width: 28vw;
+        border: 1px solid rgb(21, 21, 45);
+        text-align: center;
+        border-radius: 8px;
+    }
+    body{
+        overflow-x:hidden ;
+    }
+    .section3{
+        padding: 5px;
+    }
+    .btn{
+        width: 7rem;
+    }
+  }
